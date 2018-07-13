@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Asap, sans-serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(180deg, #424242, black);
+    z-index: 2;
+}
+
+.nav-span {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: gray;
+}
+
+img {
+    padding: 10px;
+}
+
+#header-img {
+    display: block;
+    margin: auto;
+}
+
+.reality-note {
+    display: block;
+    max-width: 600px;
+    margin: -40px auto 40px auto;
+    padding-bottom: 10px;
+    
+    font-size: 13px;
+    font-style: italic;
+    text-align: center;
+}
+
+article {
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.subheader {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 20px 60px 20px;
+}
+
+.main-header {
+    padding: 95px 20px 20px 20px;
+    margin-top: -95px;
+    text-align: center;
+}
+
+p, ul {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    line-height: 30px;
+}
+
+/* I had to use box-sizing: border-box to prevent text bleed from the browser not including padding in the width. */
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.purchase-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 20px;
+    max-width: 800px;
+}
+
+.purchase-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 3px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.purchase-img {
+    height: 120px;
+    width: 120px;
+}
+
+.purchase-text {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.purchase-link {
+    background: black;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.purchase-link:hover {
+    color: gray;
+}
+
+[id="email"] {
+   display: block;
+   margin: auto;
+   padding: 5px;
+}
+
+[id="submit"] {
+   display: block;
+   margin: 10px auto;
+   background: black;
+   color: white;
+   border-radius: 20px;
+   padding: 10px;
+   font-family: Asap, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   border: none;
+}
+
+[id="submit"]:hover {
+    color: gray;
+}
+
+.fineprint {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(180deg, #424242, black);
+}
+
+.fp-link {
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.fp-link:hover {
+    color: gray;
+}
+
+.copyright {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+@media (max-width: 800px) {
+    .purchase-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
